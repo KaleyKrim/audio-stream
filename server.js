@@ -20,7 +20,7 @@ io.on('connection', (socket) => {
   socket.on('stream', (data) => {
     console.log(data);
     let stream = ss.createStream();
-    let filename = path.join(__dirname, '/testing.m4a');
+    let filename = path.join(__dirname, `/clips/${data.title}.m4a`);
     ss(socket).emit('audio-stream', stream, { name : filename});
     fs.createReadStream(filename).pipe(stream);
   })

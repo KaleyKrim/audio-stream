@@ -4,7 +4,7 @@ var audio = document.getElementById('audio');
 
 socket.on('start', function (data) {
 
-  socket.emit('stream', { Any: 'random data' });
+  socket.emit('stream', { Data : 'you can send any data back' });
     ss(socket).on('audio-stream', function(stream, data) {
         parts = [];
         stream.on('data', (chunk) => {

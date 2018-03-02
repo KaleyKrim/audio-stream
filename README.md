@@ -1,3 +1,3 @@
-# audio-stream
+# audio-stream :koala:
 
-Code reference for very simple audio stream with Socket.io.
+:musical_note::notes: Code reference for very simple audio streaming with Socket.io :notes::musical_note:
